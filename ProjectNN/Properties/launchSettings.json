@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,                                       // 啟動 Windows 身分驗證
+    "anonymousAuthentication": true,                                       // 啟動匿名驗證
+    "iisExpress": {
+      "applicationUrl": "http://localhost:20859",                         // 應用程式啟動的 URL 路徑
+      "sslPort": 44330                                                    // 啟動 SSL 的連接埠
+    }
+  },
+  "profiles": {
+    "ProjectNN": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,                                               // 是否啟動瀏覽器
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7092;http://localhost:5092",   // 啟動瀏覽器後的相對 URL 位置
+      "environmentVariables": {                                           // 設定環境變數
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",                                         // 執行應用程式的模式
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
