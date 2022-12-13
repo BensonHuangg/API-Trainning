@@ -29,5 +29,8 @@
         /// 花費
         /// </summary>
         public int Cost { get; set; }
+
+        ///這是一個上船修改測試
+        ///20221213
     }
 }
