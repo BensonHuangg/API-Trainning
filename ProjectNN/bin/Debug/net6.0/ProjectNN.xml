@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectNN</name>
+    </assembly>
+    <members>
+        <member name="F:ProjectNN.Controllers.CardController._cardRepository">
+            <summary>
+            卡片資料操作
+            </summary>
+        </member>
+        <member name="M:ProjectNN.Controllers.CardController.#ctor">
+            <summary>
+            建構式
+            </summary>
+        </member>
+        <member name="M:ProjectNN.Controllers.CardController.GetList">
+            <summary>
+            查詢卡片列表
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ProjectNN.Controllers.CardController.Get(System.Int32)" -->
+        <member name="M:ProjectNN.Controllers.CardController.Insert(ProjectNN.Parameter.CardParameter)">
+            <summary>
+            新增卡片
+             </summary>
+             <param name="parameter">卡片參數</param>
+             <returns></returns>
+        </member>
+        <member name="M:ProjectNN.Controllers.CardController.Update(System.Int32,ProjectNN.Parameter.CardParameter)">
+            <summary>
+            更新卡片
+            </summary>
+            <param name="id">卡片編號</param>
+            <param name="parameter">卡片參數</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectNN.Controllers.CardController.Delete(System.Int32)">
+            <summary>
+            刪除卡片
+            </summary>
+            <param name="id">卡片編號</param>
+            <returns></returns>
+        </member>
+        <member name="T:ProjectNN.Models.Card">
+            <summary>
+            卡片
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Models.Card.Id">
+            <summary>
+            卡片編號
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Models.Card.Name">
+            <summary>
+            卡片名稱
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Models.Card.Description">
+            <summary>
+            卡片描述
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Models.Card.Attack">
+            <summary>
+            攻擊力
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Models.Card.Health">
+            <summary>
+            血量
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Models.Card.Cost">
+            <summary>
+            花費
+            </summary>
+        </member>
+        <member name="T:ProjectNN.Parameter.CardParameter">
+            <summary>
+            卡片參數
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Parameter.CardParameter.Name">
+            <summary>
+            卡片名稱
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Parameter.CardParameter.Description">
+            <summary>
+            卡片描述
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Parameter.CardParameter.Attack">
+            <summary>
+            攻擊力
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Parameter.CardParameter.Health">
+            <summary>
+            血量
+            </summary>
+        </member>
+        <member name="P:ProjectNN.Parameter.CardParameter.Cost">
+            <summary>
+            花費
+            </summary>
+        </member>
+        <member name="T:ProjectNN.Repository.CardRepository">
+            <summary>
+            卡片資料操作
+            </summary>
+        </member>
+        <member name="F:ProjectNN.Repository.CardRepository._connectString">
+            <summary>
+            連線字串
+            </summary>
+        </member>
+        <member name="M:ProjectNN.Repository.CardRepository.GetList">
+            <summary>
+            查詢卡片列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectNN.Repository.CardRepository.Get(System.Int32)">
+            <summary>
+            查詢卡片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectNN.Repository.CardRepository.Create(ProjectNN.Parameter.CardParameter)">
+            <summary>
+            新增卡片
+            </summary>
+            <param name="parameter">參數</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectNN.Repository.CardRepository.Update(System.Int32,ProjectNN.Parameter.CardParameter)">
+            <summary>
+            修改卡片
+            </summary>
+            <param name="id">卡片編號</param>
+            <param name="parameter">參數</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectNN.Repository.CardRepository.Delete(System.Int32)">
+            <summary>
+            刪除卡片
+            </summary>
+            <param name="id">卡片編號</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -32,6 +32,7 @@ namespace ProjectNN.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Produces("application/json")]
         public IEnumerable<Card> GetList()
         {
             return this._cardRepository.GetList();
@@ -39,11 +40,16 @@ namespace ProjectNN.Controllers
 
         /// <summary>
         /// 查詢卡片
-        /// </summary>
+        /// </summary
+        /// <remarks>我是附加說明</remarks>
         /// <param name="id">卡片編號</param>
+        /// <response code="200">回傳對應的卡片</response>
+        /// <response code="404">找不到該編號的卡片</response>
         /// <returns></returns>
         [HttpGet]
-        [Route("{id}")]
+        [Produces(contentType:"application/json")]
+        [ProducesResponseType(typeof(Card), statusCode: 200)]
+        [Route(template:"{id}")]
         public Card Get([FromRoute] int id)
         {
             var result = this._cardRepository.Get(id);
